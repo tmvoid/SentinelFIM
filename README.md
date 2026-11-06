@@ -2,18 +2,11 @@
 
 A File Integrity Monitoring (FIM) solution designed to detect file system changes in real time and provide visibility into potentially suspicious activity.
 
-## Current Features
+## Features
 
-- Real-time file monitoring
-- File creation detection
-- File modification detection
-- File deletion detection
-- Recursive directory monitoring
-
-## Planned Features
-
+- Real-time file monitoring & event logging
 - SQLite event storage
-- Risk scoring engine
-- Security dashboard
-- Alert management
-- Report export
+- Risk scoring engine & severity classification
+- Cryptographic integrity baseline (SHA-256)
+- Security dashboard (Streamlit)
+- Configuration management & reporting exporters

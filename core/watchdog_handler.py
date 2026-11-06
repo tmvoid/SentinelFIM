@@ -2,7 +2,7 @@ from datetime import datetime
 from watchdog.events import FileSystemEventHandler
 
 from core.risk_engine import RiskEngine
-from database import Database
+from database.database import Database
 
 
 class SentinelHandler(FileSystemEventHandler):

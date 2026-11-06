@@ -1,7 +1,6 @@
-```python
 from datetime import datetime
 
-from database import Database
+from database.database import Database
 from core.risk_engine import RiskEngine
 
 db = Database()
@@ -33,10 +32,10 @@ class Logger:
             file.write(log_entry + "\n")
 
         db.insert_event(
+            timestamp=timestamp,
             event_type=event_type,
             file_path=file_path,
-            timestamp=timestamp,
             risk_score=risk_score,
-            severity=severity
+            severity=severity,
+            details=event_type
         )
-```

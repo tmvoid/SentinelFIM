@@ -1,0 +1,5 @@
+watch_path: "monitored"
+alert_webhook: ""
+enable_baseline: true
+high_risk_threshold: 70
+critical_threshold: 85
